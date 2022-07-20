@@ -3,6 +3,9 @@
 ---------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
+/*-------------------
+   Common Contant 
+--------------------- */
 body {
   margin: 0px auto;
   font-family: "Poppins", sans-serif;
@@ -20,7 +23,6 @@ header {
 .header-info {
   display: flex;
   width: 75%;
-  /* height: 400px; */
   background: #3187b9;
   border-radius: 30px;
   margin-top: 50px;
@@ -106,7 +108,7 @@ main {
 }
 
 /*---------------------
-      Blogs Container
+      Blogs Section
 -----------------------*/
 .blog-section {
   display: grid;
@@ -135,29 +137,6 @@ a {
   font-size: 1vw;
 }
 
-/* Animation */
-.football-ground {
-  margin: 20px;
-  padding: 0;
-  overflow: hidden;
-  background: url(images/stadium.jpg);
-  background-size: cover;
-}
-.football {
-  height: 100vh;
-}
-.football-img {
-  max-width: 300px;
-  animation: animate 4s linear infinite;
-}
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /*--------------------
        Footer
 ----------------------*/
@@ -218,9 +197,9 @@ hr {
   font-size: 1.5vw;
 }
 
-/*----------------
-   Second Website 
------------------- */
+/*-------------------
+   Upcomming Matchs 
+--------------------- */
 
 .matchs {
   display: grid;
@@ -254,7 +233,35 @@ hr {
   padding-left: 5px;
 }
 
-/* Media Contant  */
+/*----------------
+     Animation
+------------------*/
+.football-ground {
+  margin: 20px;
+  padding: 0;
+  overflow: hidden;
+  background: url(images/stadium.jpg);
+  background-size: cover;
+}
+.football {
+  height: 100vh;
+}
+.football-img {
+  max-width: 300px;
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------
+    Media Contant  
+ ---------------------*/
 
 @media screen and (max-width: 576px) {
   .header-info {

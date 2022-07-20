@@ -23,6 +23,7 @@ header {
   border-radius: 30px;
   margin-top: 50px;
   padding: 20px;
+  padding-top: 50px;
 }
 .contant {
   width: 50%;
@@ -64,7 +65,7 @@ main {
 .container {
   display: flex;
   width: 70%;
-  margin-top: 130px;
+  padding-top: 130px;
 }
 .container-2 {
   width: 312px;
@@ -86,16 +87,18 @@ main {
   background: #ffffff;
   border-radius: 10px;
   text-align: center;
-  padding: 17px 39px;
+  padding: 15px 30px;
+  border: 1px solid gray;
 }
 
 .color-button {
   text-decoration: none;
   color: #ffffff;
-  padding: 17px 39px;
+  padding: 15px 30px;
   background: #dd0000;
   border-radius: 10px;
   text-align: center;
+  border: 1px solid gray;
 }
 
 /* Blogs Container  */
@@ -124,7 +127,14 @@ a {
 /* Footer  */
 footer {
   display: flex;
+  justify-content: center;
+}
+
+.footer-contant {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   align-items: center;
   color: #ffffff;
   text-align: center;
@@ -140,8 +150,71 @@ hr {
 }
 @media screen and (max-width: 576px) {
   .header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+  }
+  .contant {
+    text-align: center;
+  }
+  .header-image {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-contant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    background-color: #ffffff;
+  }
+  .blog-section {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    height: 600px;
+    row-gap: 30px;
+  }
+  .button {
+    font-size: 1vw;
+    padding: 12px 70px;
+  }
+  .color-button {
+    font-size: 1vw;
+    padding: 12px 70px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-contant {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .button {
+    font-size: 1vw;
+    padding: 5px 70px;
+  }
+  .color-button {
+    font-size: 1vw;
+    padding: 12px 70px;
   }
 }

@@ -239,6 +239,8 @@ hr {
 .football-ground {
   margin: 20px;
   padding: 0;
+  width: 85%;
+  margin-left: 10%;
   overflow: hidden;
   background: url(images/stadium.jpg);
   background-size: cover;

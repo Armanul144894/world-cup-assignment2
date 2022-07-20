@@ -1,4 +1,6 @@
-/* google fonts*/
+/*------------- 
+  google fonts
+---------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 body {
@@ -64,7 +66,7 @@ main {
 }
 .container {
   display: flex;
-  width: 70%;
+  width: 80%;
   padding-top: 130px;
 }
 .container-2 {
@@ -102,13 +104,19 @@ main {
   border: 1px solid gray;
 }
 
-/* Blogs Container  */
+/*---------------------
+      Blogs Container
+-----------------------*/
 .blog-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 10px;
   row-gap: 10px;
   margin-left: 10px;
+}
+.blog {
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 .thumbnail img {
   width: 100%;
@@ -125,7 +133,9 @@ a {
   column-gap: 30px;
   font-size: 1vw;
 }
-/* Footer  */
+/*--------------------
+       Footer
+----------------------*/
 footer {
   display: flex;
   justify-content: center;
@@ -181,13 +191,15 @@ hr {
   font-size: 1.5vw;
 }
 
-/* Second Website  */
+/*----------------
+   Second Website 
+------------------ */
+
 .matchs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 50px;
-  row-gap: 10px;
-  width: 100%;
+  column-gap: 10px;
+  row-gap: 20px;
 }
 .match {
   display: flex;
@@ -197,17 +209,26 @@ hr {
 }
 .match-info {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
 }
-.match-info img,
-h3,
-p {
-  padding-right: 10px;
-  width: 50%;
-  font-size: 1vw;
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.image {
+  width: 100%;
+  padding: 5px;
+}
+.date {
+  padding-left: 5px;
 }
 
 /* Media Contant  */
+
 @media screen and (max-width: 576px) {
   .header-info {
     display: flex;
@@ -216,8 +237,11 @@ p {
     height: 600px;
     align-items: center;
   }
+
   .contant {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .header-image {
     text-align: center;
@@ -230,8 +254,6 @@ p {
     align-items: center;
   }
   .main-contant {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 10px;
@@ -242,13 +264,9 @@ p {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 30px;
   }
-  .button {
-    font-size: 1vw;
-    padding: 12px 70px;
-  }
-  .color-button {
-    font-size: 1vw;
-    padding: 12px 70px;
+  .matchs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -265,16 +283,20 @@ p {
     align-items: center;
     background-color: #ffffff;
   }
-  .blog-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
   .button {
     font-size: 1vw;
-    padding: 5px 70px;
+    padding: 4px 70px;
   }
   .color-button {
     font-size: 1vw;
     padding: 12px 70px;
+  }
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .matchs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

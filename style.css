@@ -136,6 +136,16 @@ a {
   column-gap: 30px;
   font-size: 1vw;
 }
+.view-button {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 2vw;
+  margin-bottom: 50px;
+  display: none;
+}
 
 /*--------------------
        Footer
@@ -328,6 +338,20 @@ hr {
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
+  }
+  .view-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 2vw;
+    margin: 30px 200px;
   }
   .button {
     font-size: 1vw;
